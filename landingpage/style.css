@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Lato:wght@300&family=Montserrat&family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+ 
+}
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+}
+
+body::-webkit-scrollbar {
+   display: block;
+   width: 8px;
+   background-color: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+
+   background: #ffaa00;
+   border-radius: 50px;
+}
+
+#parent {
+   width: 100%;
+   height: 100%;
+
+}
+
+/* navbar starts here  */
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 100%;
+   height: 85px;
+   background-color: #ffaa00;
+   position: fixed;
+   
+}
+
+nav #logo h2 {
+   font-size: 30px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+nav #nav-part1 a {
+   text-decoration: none;
+   margin-left: 20px;
+   font-size: 20px;
+   font-weight: 500;
+   color: #000;
+}
+
+/* navbar ends here  */
+
+
+/* banner section start from here  */
+.banner {
+   height: calc(100% - 90px);
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1566959621395-9200c65ba74b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.banner #heading1 {
+   text-shadow: 1px 1px 1px #000,
+      3px 3px 2px #ffaa00;
+   font-size: 35px;
+   font-weight: 500;
+   color: #ddd;
+   letter-spacing: 2px;
+   margin-bottom: 20px;
+}
+
+.banner #heading2 {
+   text-shadow: 1px 1px 1px #000,
+      3px 3px 2px #ffaa00;
+   font-size: 55px;
+   font-weight: 500;
+   color: #ddd;
+   margin-bottom: 20px;
+}
+
+#para {
+   text-shadow: 1px 1px 1px #000,
+      3px 3px 2px #ffaa00;
+   font-size: 18px;
+   font-weight: 400;
+   color: #ddd;
+
+}
+
+.content:after {
+   content: '';
+   animation: changeContent 8s infinite linear;
+   color: #ffaa00;
+   text-shadow: none;
+}
+
+@keyframes changeContent {
+   0% {
+      content: "AGRA";
+   }
+
+   10% {
+      content: "Jaipur";
+   }
+
+   20% {
+      content: "Rajgir";
+   }
+
+   30% {
+      content: "Sikkim";
+   }
+
+   40% {
+      content: 'Gujrat';
+   }
+
+   50% {
+      content: "Maharashtra";
+   }
+
+   60% {
+      content: "West Bengal";
+   }
+
+   70% {
+      content: "Tamil Nadu";
+   }
+
+   80% {
+      content: "Kerala";
+   }
+
+   90% {
+      content: "Uttar Pradesh"
+   }
+
+   100% {
+      content: "Kashmir";
+   }
+}
+
+/* banner section end from here  */
+
+/* momenuments section start here  */
+
+.momenuments {
+   margin: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+.heading {
+   text-shadow: 1px 1px 1px #000;
+   text-align: center;
+   border-bottom: 1px solid #333;
+   color: #ffaa00;
+   width: 300px;
+   margin: auto;
+   font-size: 45px;
+   font-weight: 500;
+
+}
+
+
+#card-img {
+   width: 400px;
+   height: 320px;
+   overflow: hidden;
+
+}
+
+#card-img img {
+   height: 100%;
+   width: 100%;
+   transition: all ease 1s;
+
+}
+
+#card-img img:hover  {
+   scale: 1.1;
+}
+
+
+#card-title {
+   text-align: center;
+   font-size: 28px;
+   margin: 15px;
+   font-weight: 500;
+}
+
+#card-text {
+   width: 390px;
+   text-align: justify;
+   padding: 5px;
+   color: #333;
+}
+
+
+/* momenuments section end here  */
+
+/* Ram setu section start here  */
+#ramsetu {
+   width: 100%;
+   height: 520px;
+   background-color: #dadada;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 10px;
+}
+
+#ramsetu #ramsetu-img {
+   width: 45%;
+   height: 500px;
+   margin-top: 20px;
+}
+
+#ramsetu-img img {
+   width: 100%;
+   height: 100%;
+}
+
+#ramsetu #paragraph {
+   width: 45%;
+   height: 380px;
+   margin-top: 6px;
+   padding: 16px;
+}
+
+#paragraph #title {
+   font-size: 22px;
+   font-weight: 500;
+   margin-bottom: 8px;
+   line-height: 1.5;
+}
+
+#paragraph #para1 {
+   font-family: 'Poppins', sans-serif;
+   line-height: normal;
+   text-align: justify;
+
+
+}
+
+/* Ram setu section end here  */
+
+/* Temple section start here  */
+#temple{
+   width: 100%;
+   height: 300px;
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+#temple-img {
+   width: 300px;
+   height: 290px;
+
+}
+
+#temple-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: top;
+   border: 3px solid #dadada;
+   border-radius: 5px;
+   transition: all ease 1s;
+}
+
+#text{
+   text-align: center;
+   font-weight: 500;
+   font-size: 20px;
+   text-shadow: 1px 1px 0px #ffaa00;
+   margin: 10px;
+   
+}
+
+#temple-img img:hover{
+   scale: 1.1;
+   cursor: pointer;
+}
+/* Temple section end here  */
+
+/* Contact section start here */
+
+#contact{
+  margin-top: 45px;
+   position: relative;
+}
+
+#contact::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   opacity: 0.5;
+   z-index: -1;
+   background: url('../landingpage/images/contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 35px;
+}
+
+#contact-box form {
+   width: 40%;
+ }
+
+#contact-box label {
+   font-size: 1.3rem;
+ }
+
+#contact-box input,
+#contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.2rem;
+}
+
+.btn{
+   padding: 6px 12px;
+   font-size: 18px;
+   border: none;
+   border-radius: 4px;
+   background-color: #ffaa00;
+   font-weight: 500;
+   margin-top: 20px;
+   width: 150px;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all ease 0.5s;
+}
+
+.btn:hover{
+   box-shadow: 5px 5px 0px #333;
+}
+
+/* Contact section end here  */
+
+/* footer section start  */
+
+footer {
+   background: black;
+   color: #ffaa00;
+   padding: 9px 20px;
+   text-align: center;
+ }
+
+ /* footer section end  */
